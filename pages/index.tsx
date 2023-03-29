@@ -27,7 +27,7 @@ export default function Home() {
   }>({
     messages: [
       {
-        message: 'What do you want to learn about this SEC filing?',
+        message: 'What do you want to ask Charlie?',
         type: 'apiMessage',
       },
     ],
@@ -165,7 +165,7 @@ export default function Home() {
       <Layout>
         <div className="mx-auto flex flex-col gap-4">
           <h1 className="text-2xl font-bold leading-[1.1] tracking-tighter text-center">
-            Welcome to No B.S: the AI chatbot that answers your questions about SEC filings
+            Welcome to AskMunger. Ask Charlie anything, from psychology to investing.
           </h1>
           <main className={styles.main}>
             <div className={styles.cloud}>
@@ -176,7 +176,7 @@ export default function Home() {
                   if (message.type === 'apiMessage') {
                     icon = (
                       <Image
-                        src="/no-bs.jpg"
+                        src="/charlie (1).jpg"
                         alt="AI"
                         width="40"
                         height="40"
@@ -281,8 +281,8 @@ export default function Home() {
                     name="userInput"
                     placeholder={
                       loading
-                        ? 'Waiting for response...'
-                        : 'What are the risk factors?'
+                        ? 'Charlie is thinking...'
+                        : "What are some tendencies that affect one's decision-making?"
                     }
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}

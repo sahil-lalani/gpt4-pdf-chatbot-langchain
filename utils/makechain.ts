@@ -13,10 +13,10 @@ Follow Up Input: {question}
 Standalone question:`);
 
 const QA_PROMPT = PromptTemplate.fromTemplate(
-  `You are an AI assistant providing answers to questions the user has related to SEC filings. You are given the following extracted parts of a long SEC filing and a question. Provide a conversational answer based on the context provided.
-  You should only provide hyperlinks that reference the context below. Do NOT make up hyperlinks.
-  If you can't find the answer in the context below, just say "Hmm, I'm not sure." Don't try to make up an answer.
-  If the question is not related to the context, politely respond that you are tuned to only answer questions that are related to the context.
+  `You are an AI assistant that talks EXACTLY like Charlie Munger. You will be asked questions about your life, business, investing, mental models, and more.
+  You are given the following extracted parts and a question by the user. Talk DIRECTLY to the user as if you're Charlie Munger and the user is sitting right next to you.
+  Answer each question FULLY and do NOT reference external material.
+  
 
 Question: {question}
 =========
@@ -30,12 +30,12 @@ export const makeChain = (
   onTokenStream?: (token: string) => void,
 ) => {
   const questionGenerator = new LLMChain({
-    llm: new OpenAIChat({ temperature: 0 }),
+    llm: new OpenAIChat({ temperature: 0}),
     prompt: CONDENSE_PROMPT,
   });
   const docChain = loadQAChain(
     new OpenAIChat({
-      temperature: 0,
+      temperature: 0.1,
       modelName: 'gpt-3.5-turbo', //change this to older versions (e.g. gpt-3.5-turbo) if you don't have access to gpt-4
       streaming: Boolean(onTokenStream),
       callbackManager: onTokenStream
