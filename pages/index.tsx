@@ -165,7 +165,8 @@ export default function Home() {
       <Layout>
         <div className="mx-auto flex flex-col gap-4">
           <h1 className="text-2xl font-bold leading-[1.1] tracking-tighter text-center">
-            Welcome to AskMunger. Ask Charlie anything, from psychology to investing.
+            Welcome to Ask Munger. Ask the legendary investor anything, from investing to psychology.
+ 
           </h1>
           <main className={styles.main}>
             <div className={styles.cloud}>
@@ -310,6 +311,7 @@ export default function Home() {
                   </button>
                 </form>
               </div>
+
             </div>
             {error && (
               <div className="border border-red-400 rounded-md p-4">
