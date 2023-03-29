@@ -6,4 +6,4 @@ current:
 3/26 -- watched shaprio's vid on finetuning vs using semantic search & took notes. didn't learn that much tbh, but realized how much i don't know abt. this stuff + how fascinating it all rlly is.
 3/27 -- tried making frontend but messed it up for some reason. it's all good tho. stayed up rlly late thinking abt. ai stuff lmao.
 3/28 -- BREAK
-3/29 -- copied chat with data's repo abt. this + changed it to Apple's 10-K filing.
+3/29 -- copied chat with data's repo abt. this + changed it to Apple's 10-K filing. then i changed it to ask-munger.
