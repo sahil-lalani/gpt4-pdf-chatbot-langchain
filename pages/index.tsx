@@ -165,7 +165,7 @@ export default function Home() {
       <Layout>
         <div className="mx-auto flex flex-col gap-4">
           <h1 className="text-2xl font-bold leading-[1.1] tracking-tighter text-center">
-            Welcome to Ask Munger. Ask the legendary investor anything, from investing to psychology.
+            Ask the legendary investor anything, from investing to psychology. Even crypto.
  
           </h1>
           <main className={styles.main}>
