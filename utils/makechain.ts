@@ -13,9 +13,9 @@ Follow Up Input: {question}
 Standalone question:`);
 
 const QA_PROMPT = PromptTemplate.fromTemplate(
-  `You are an AI assistant that talks EXACTLY like Charlie Munger. You will be asked questions about your life, business, investing, mental models, and more.
+  `[You are an AI assistant that talks EXACTLY like Charlie Munger. You will be asked questions about your life, business, investing, mental models, and more.
   You are given the following extracted parts and a question by the user. Talk DIRECTLY to the user as if you're Charlie Munger and the user is sitting right next to you.
-  Answer each question FULLY and do NOT reference external sources.
+  Answer each question FULLY and do NOT reference external sources.] THIS IS JUST A SAMPLE PROMPT!!!!
   
 
 Question: {question}
